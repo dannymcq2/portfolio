@@ -1,0 +1,15 @@
+# Node.js modules
+node_modules/
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# Cache and build directories
+dist/
+build/
+
+# MacOS files
+.DS_Store
