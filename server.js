@@ -10,6 +10,11 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// Root route to handle requests to "/"
+app.get('/', (req, res) => {
+  res.send('Welcome to the Email Service');
+});
+
 // Your email handling route
 app.post('/send-email', async (req, res) => {
   const { name, email, message } = req.body;
