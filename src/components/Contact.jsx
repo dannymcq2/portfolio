@@ -5,9 +5,7 @@ function Contact() {
   const [errors, setErrors] = useState({});
   const [statusMessage, setStatusMessage] = useState('');
 
-  const validateEmail = (email) => {
-    return /\S+@\S+\.\S+/.test(email);
-  };
+  const validateEmail = (email) => /\S+@\S+\.\S+/.test(email);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,9 +22,7 @@ function Contact() {
       try {
         const response = await fetch('http://localhost:5006/send-email', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData),
         });
 
@@ -44,38 +40,44 @@ function Contact() {
   };
 
   return (
-    <section>
+    <section className="contact-form">
       <h2>Contact</h2>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>Name:</label>
+        <div className="form-group">
+          <label htmlFor="name">Name:</label>
           <input
+            id="name"
             type="text"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            className={errors.name ? 'input-error' : ''}
           />
-          {errors.name && <span>{errors.name}</span>}
+          {errors.name && <span className="error-text">{errors.name}</span>}
         </div>
-        <div>
-          <label>Email:</label>
+        <div className="form-group">
+          <label htmlFor="email">Email:</label>
           <input
+            id="email"
             type="email"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+            className={errors.email ? 'input-error' : ''}
           />
-          {errors.email && <span>{errors.email}</span>}
+          {errors.email && <span className="error-text">{errors.email}</span>}
         </div>
-        <div>
-          <label>Message:</label>
+        <div className="form-group">
+          <label htmlFor="message">Message:</label>
           <textarea
+            id="message"
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+            className={errors.message ? 'input-error' : ''}
           />
-          {errors.message && <span>{errors.message}</span>}
+          {errors.message && <span className="error-text">{errors.message}</span>}
         </div>
-        <button type="submit">Send</button>
+        <button type="submit" className="submit-button">Send</button>
       </form>
-      {statusMessage && <p>{statusMessage}</p>}
+      {statusMessage && <p className="status-message">{statusMessage}</p>}
     </section>
   );
 }

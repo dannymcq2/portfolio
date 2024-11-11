@@ -1,16 +1,8 @@
 function Resume() {
-  const proficiencies = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "Node.js",
-    "Express",
-    "MongoDB",
-  ];
+  const proficiencies = ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "MongoDB"];
 
   return (
-    <section>
+    <section className="resume">
       <h2>Resume</h2>
       <p>
         <a href="/path_to_your_resume.pdf" download="DannyMcHugh_Resume.pdf" aria-label="Download Danny McHugh's Resume">

@@ -25,16 +25,10 @@ function Portfolio() {
         repoLink: "https://github.com/dannymcq2/module5tasks",
       },      {
         title: "Project 5",
-        image: "public/Screenshot 2024-09-25 at 7.04.10 PM.png",
+        image: "public/Screenshot 2024-11-11 at 3.05.22 PM.png",
         appLink: "",
-        repoLink: "https://github.com/mkeeney42/Film-Fanatics",
-      },
-      {
-        title: "Project 6",
-        image: "public/Screenshot 2024-09-25 at 7.04.10 PM.png",
-        appLink: "",
-        repoLink: "https://github.com/dannymcq2/notetakerx",
-      },
+        repoLink: "https://github.com/dannymcq2/beatvisualizer",
+      }
     ];
   
     return (
