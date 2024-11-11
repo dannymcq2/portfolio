@@ -1,15 +1,24 @@
 import express from 'express';
-import nodemailer from 'nodemailer';
+import path from 'path';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import dotenv from 'dotenv';
-
-dotenv.config();
+import nodemailer from 'nodemailer';
 
 const app = express();
+const __dirname = path.resolve();
+
 app.use(cors());
 app.use(bodyParser.json());
 
+// Serve static files from the `dist` directory
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// Handle all routes and serve the React app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
+// Example endpoint for your email functionality
 app.post('/send-email', async (req, res) => {
   const { name, email, message } = req.body;
 
@@ -37,7 +46,7 @@ app.post('/send-email', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 5006;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
