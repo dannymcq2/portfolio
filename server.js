@@ -1,21 +1,13 @@
-import dotenv from 'dotenv';
-import express from 'express';
-import nodemailer from 'nodemailer';
-import cors from 'cors';
-import bodyParser from 'body-parser';
-
-dotenv.config();
+require('dotenv').config();
+const express = require('express');
+const nodemailer = require('nodemailer');
+const cors = require('cors');
+const bodyParser = require('body-parser');
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// Root route to handle requests to "/"
-app.get('/', (req, res) => {
-  res.send('Welcome to the Email Service');
-});
-
-// Your email handling route
 app.post('/send-email', async (req, res) => {
   const { name, email, message } = req.body;
 
@@ -28,9 +20,9 @@ app.post('/send-email', async (req, res) => {
   });
 
   const mailOptions = {
-    from: process.env.EMAIL_USER,
-    replyTo: email,
-    to: process.env.EMAIL_USER,
+    from: process.env.EMAIL_USER, // This will still be your email
+    replyTo: email, // This sets the reply-to address as the user's email
+    to: process.env.EMAIL_USER, // Your email, where you want to receive the messages
     subject: `New message from ${name}`,
     text: message,
   };
