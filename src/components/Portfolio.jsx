@@ -27,7 +27,7 @@ function Portfolio() {
     {
       title: "Project 5",
       image: "https://github.com/dannymcq2/img/blob/main/Screenshot%202024-11-11%20at%203.05.22%E2%80%AFPM.png?raw=true",
-      appLink: "",
+      appLink: "https://dannymcq2.github.io/beatvisualizer/",
       repoLink: "https://github.com/dannymcq2/beatvisualizer",
     }
   ];
