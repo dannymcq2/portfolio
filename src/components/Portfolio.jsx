@@ -2,19 +2,19 @@ function Portfolio() {
   const projects = [
     {
       title: "Project 1",
-      image: "/Screenshot 2024-09-25 at 6.43.04 PM.png",
+      image: "public/Screenshot 2024-09-25 at 6.43.04 PM.png",
       appLink: "https://dannymcq2.github.io/6weatherboard/",
       repoLink: "https://github.com/dannymcq2/6weatherboard",
     },
     {
       title: "Project 2",
-      image: "/Screenshot 2024-09-25 at 6.53.20 PM.png",
+      image: "public/Screenshot 2024-09-25 at 6.53.20 PM.png",
       appLink: "https://dannymcq2.github.io/module3employeedata/",
       repoLink: "https://github.com/dannymcq2/module3employeedata",
     },
     {
       title: "Project 3",
-      image: "/Screenshot 2024-09-25 at 6.55.21 PM.png",
+      image: "public/Screenshot 2024-09-25 at 6.55.21 PM.png",
       appLink: "https://dannymcq2.github.io/module4blogging/",
       repoLink: "https://github.com/dannymcq2/module4blogging",
     },
@@ -26,7 +26,7 @@ function Portfolio() {
     },
     {
       title: "Project 5",
-      image: "/Screenshot 2024-11-11 at 3.05.22 PM.png",
+      image: "public/Screenshot 2024-11-11 at 3.05.22 PM.png",
       appLink: "",
       repoLink: "https://github.com/dannymcq2/beatvisualizer",
     }
