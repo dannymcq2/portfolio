@@ -2,31 +2,31 @@ function Portfolio() {
   const projects = [
     {
       title: "Project 1",
-      image: "public/Screenshot 2024-09-25 at 6.43.04 PM.png",
+      image: "https://github.com/dannymcq2/img/blob/main/Screenshot%202024-09-25%20at%206.43.04%E2%80%AFPM.png?raw=true",
       appLink: "https://dannymcq2.github.io/6weatherboard/",
       repoLink: "https://github.com/dannymcq2/6weatherboard",
     },
     {
       title: "Project 2",
-      image: "public/Screenshot 2024-09-25 at 6.53.20 PM.png",
+      image: "https://github.com/dannymcq2/img/blob/main/Screenshot%202024-09-25%20at%206.53.20%E2%80%AFPM.png?raw=true",
       appLink: "https://dannymcq2.github.io/module3employeedata/",
       repoLink: "https://github.com/dannymcq2/module3employeedata",
     },
     {
       title: "Project 3",
-      image: "public/Screenshot 2024-09-25 at 6.55.21 PM.png",
+      image: "https://github.com/dannymcq2/img/blob/main/Screenshot%202024-09-25%20at%206.55.21%E2%80%AFPM.png?raw=true",
       appLink: "https://dannymcq2.github.io/module4blogging/",
       repoLink: "https://github.com/dannymcq2/module4blogging",
     },
     {
       title: "Project 4",
-      image: "/Screenshot 2024-09-25 at 6.57.29 PM.png",
+      image: "https://github.com/dannymcq2/img/blob/main/Screenshot%202024-09-25%20at%206.57.29%E2%80%AFPM.png?raw=true",
       appLink: "https://dannymcq2.github.io/module5tasks/",
       repoLink: "https://github.com/dannymcq2/module5tasks",
     },
     {
       title: "Project 5",
-      image: "public/Screenshot 2024-11-11 at 3.05.22 PM.png",
+      image: "https://github.com/dannymcq2/img/blob/main/Screenshot%202024-11-11%20at%203.05.22%E2%80%AFPM.png?raw=true",
       appLink: "",
       repoLink: "https://github.com/dannymcq2/beatvisualizer",
     }
