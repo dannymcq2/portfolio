@@ -1,35 +1,36 @@
 function Portfolio() {
-    const projects = [
-      {
-        title: "Project 1",
-        image: "public/Screenshot 2024-09-25 at 6.43.04 PM.png",
-        appLink: "https://dannymcq2.github.io/6weatherboard/",
-        repoLink: "https://github.com/dannymcq2/6weatherboard",
-      },
-      {
-        title: "Project 2",
-        image: "public/Screenshot 2024-09-25 at 6.53.20 PM.png",
-        appLink: "https://dannymcq2.github.io/module3employeedata/",
-        repoLink: "https://github.com/dannymcq2/module3employeedata",
-      },
-      {
-        title: "Project 3",
-        image: "public/Screenshot 2024-09-25 at 6.55.21 PM.png",
-        appLink: "https://dannymcq2.github.io/module4blogging/",
-        repoLink: "https://github.com/dannymcq2/module4blogging",
-      },
-      {
-        title: "Project 4",
-        image: "public/Screenshot 2024-09-25 at 6.57.29 PM.png",
-        appLink: "https://dannymcq2.github.io/module5tasks/",
-        repoLink: "https://github.com/dannymcq2/module5tasks",
-      },      {
-        title: "Project 5",
-        image: "public/Screenshot 2024-11-11 at 3.05.22 PM.png",
-        appLink: "",
-        repoLink: "https://github.com/dannymcq2/beatvisualizer",
-      }
-    ];
+  const projects = [
+    {
+      title: "Project 1",
+      image: `${process.env.PUBLIC_URL}/Screenshot 2024-09-25 at 6.43.04 PM.png`,
+      appLink: "https://dannymcq2.github.io/6weatherboard/",
+      repoLink: "https://github.com/dannymcq2/6weatherboard",
+    },
+    {
+      title: "Project 2",
+      image: `${process.env.PUBLIC_URL}/Screenshot 2024-09-25 at 6.53.20 PM.png`,
+      appLink: "https://dannymcq2.github.io/module3employeedata/",
+      repoLink: "https://github.com/dannymcq2/module3employeedata",
+    },
+    {
+      title: "Project 3",
+      image: `${process.env.PUBLIC_URL}/Screenshot 2024-09-25 at 6.55.21 PM.png`,
+      appLink: "https://dannymcq2.github.io/module4blogging/",
+      repoLink: "https://github.com/dannymcq2/module4blogging",
+    },
+    {
+      title: "Project 4",
+      image: `${process.env.PUBLIC_URL}/Screenshot 2024-09-25 at 6.57.29 PM.png`,
+      appLink: "https://dannymcq2.github.io/module5tasks/",
+      repoLink: "https://github.com/dannymcq2/module5tasks",
+    },
+    {
+      title: "Project 5",
+      image: `${process.env.PUBLIC_URL}/Screenshot 2024-11-11 at 3.05.22 PM.png`,
+      appLink: "",
+      repoLink: "https://github.com/dannymcq2/beatvisualizer",
+    }
+  ];
   
     return (
       <section>
